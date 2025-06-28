@@ -13,9 +13,7 @@ export class ContributorController {
     this.githubService = new GitHubService(process.env.GITHUB_TOKEN);
   }
 
-  /**
-   * Analyze user's GitHub repositories using access token from authenticated user
-   */
+
   public analyzeUserRepositories = async (
     req: Request,
     res: Response
