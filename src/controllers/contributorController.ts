@@ -19,7 +19,6 @@ export class ContributorController {
     res: Response
   ): Promise<void> => {
     try {
-      // Get user info from JWT token (set by auth middleware)
       const authUser = (req as any).user;
       if (!authUser) {
         res.status(401).json({
