@@ -17,3 +17,5 @@ export class CoinUtils {
     return outcome === "accepted" ? issueXP : Math.floor(issueXP * 0.2);
   }
 }
+
+// COrrected this fucntion
